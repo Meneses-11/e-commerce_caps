@@ -24,6 +24,7 @@
             $_SESSION["user"] = $admin["contraseña"];
         } else{
             echo '<div class="alert alert-primary text-center mt-3">Los datos son incorrectos</div>';
+            header("Location:error.php");
         }
 
     }
